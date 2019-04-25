@@ -14,6 +14,5 @@ public class StringArray {
         list.toArray(original);
 
         System.out.println(Arrays.toString(original));
-
     }
 }
