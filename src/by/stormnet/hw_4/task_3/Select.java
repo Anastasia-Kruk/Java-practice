@@ -33,6 +33,7 @@ public class Select {
             array[i] = random.nextInt((max - min) + 1) + min;
             if (array[i] % 2 == 0) {
                 counter++;
+
             }
         }
         System.out.println(Arrays.toString(array));
