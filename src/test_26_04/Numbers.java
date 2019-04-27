@@ -1,4 +1,4 @@
-package Test_26_04;
+package test_26_04;
 
 public class Numbers {
     static int twoNumbers(int num1, int num2) {
