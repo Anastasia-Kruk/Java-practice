@@ -4,7 +4,7 @@ import java.util.Random;
 //Создай двумерный массив из 5 строк и случайного количества столбцов для большей наглядности. 2 строки - это не серьезно :)
 public class RwArray {
     public static void main(String[] args) {
-        int[][] arr = new int[2][];
+        int[][] arr = new int[5][];
         Random rand = new Random();
 
         int min = 1;

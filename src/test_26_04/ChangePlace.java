@@ -2,10 +2,7 @@ package test_26_04;
 
 import java.util.Arrays;
 
-//В данном случае первый элемент должен оказать на последнем месте, что получается
-//через постоянную перемену двух элементов местами.
-//Т.е. дано [0, 1, 2, 3, 4, 5, 6, 7], на выходе получаем: [1, 2, 3, 4, 5, 6, 7, 0].
-//Поправь логику чуть-чуть
+
 public class ChangePlace {
     public static void main(String[] args) {
         int[] arrayCh = new int[8];
@@ -17,11 +14,11 @@ public class ChangePlace {
         }
         System.out.println(Arrays.toString(arrayCh));
 
-        for (int i = 1; i < arrayCh.length - 1; i++) {
+        for (int i = 1; i < arrayCh.length; i++) {
 
             temp = arrayCh[i - 1];
-            arrayCh[i - 1] = arrayCh[i + 1];
-            arrayCh[i + 1] = temp;
+            arrayCh[i - 1] = arrayCh[i];
+            arrayCh[i] = temp;
         }
         System.out.println(Arrays.toString(arrayCh));
     }
