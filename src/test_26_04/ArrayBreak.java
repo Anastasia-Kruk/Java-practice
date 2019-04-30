@@ -12,8 +12,15 @@ public class ArrayBreak {
         System.out.println(Arrays.toString(arrayBr5));
 
         System.out.println("First five numbers:");
+        //Не нужно писать пустые if блоки. В данном случае достаточно сделать вот так: 
+        /*for (int i = 0; i < arrayBr5.length; i++) {
+            if (arrayBr5[i] >= 6) {
+                break;
+            }
+            System.out.print(arrayBr5[i] + ", ");
+        }*/
 
-        for (int i = 0; i < arrayBr5.length; i++) {
+        for (int i = 0; i < arrayBr5.length; i++) {            
             if (arrayBr5[i] < 6) {
             } else break;
             System.out.print(arrayBr5[i] + ", ");
