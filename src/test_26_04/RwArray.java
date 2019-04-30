@@ -1,7 +1,7 @@
 package test_26_04;
 
 import java.util.Random;
-
+//Создай двумерный массив из 5 строк и случайного количества столбцов для большей наглядности. 2 строки - это не серьезно :)
 public class RwArray {
     public static void main(String[] args) {
         int[][] arr = new int[2][];
