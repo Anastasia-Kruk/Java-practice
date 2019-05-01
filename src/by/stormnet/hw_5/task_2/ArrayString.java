@@ -7,6 +7,7 @@ public class ArrayString {
         System.out.println(contains(args, wordFind));
     }
 
+    // array - лучше назови words, то что это массив понятно из '[]'. А так будет понятно что в этом массиве лежит
     static boolean contains(String[] array, String word) {
         boolean result = false;
 
@@ -18,4 +19,5 @@ public class ArrayString {
         return result;
     }
 
+    // технически все супер, молодец.
 }
