@@ -1,5 +1,6 @@
 package by.stormnet_hw.hw_7.task_1;
 
+// в целом молодец. 
 public class CarDemo {
     public static void main(String[] args) {
 //        diesel
