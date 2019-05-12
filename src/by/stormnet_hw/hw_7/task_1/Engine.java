@@ -1,8 +1,11 @@
 package by.stormnet_hw.hw_7.task_1;
 
 public class Engine {
+    // не совсем понятно из названия переменной за что она отвечает. 
     private double volume;
+    // лучше fuelType - тогда сразу понятно и нет желания исправить на int и думать про кол-во топлива
     private String fuel;
+    // isRunning - так правильнее
     private boolean running;
 
     public Engine(double volume, String fuel) {
@@ -11,6 +14,7 @@ public class Engine {
     }
 
     public void startEngine(boolean running) {
+        // перед ! не нужен пробел
         if ( !running) {
             System.out.println("Start engine -Brrr...");
             setRunning(true);
