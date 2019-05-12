@@ -24,12 +24,17 @@ public class Car {
                 ", transmission=" + transmission.getTypeOfTransmission() + " (" + transmission.getNumberOfGears() + ")" +
                 '}';
     }
+    
+    /*
+    не соит оставлять закомментированный код в готовой версии программы
+    */
     //    public void startMoving() {
 //        engine.startEngine(engine.isRunning());
 //        transmission.shiftGearUp();
 //        showSpeed();
 //    }
 
+    // лучше заменить showSpeed() на getSpeed(), так метод будет более универсальным
     public void showSpeed() {
         System.out.println("Speed is: " + transmission.getGear() * 20);
     }
@@ -83,6 +88,8 @@ public class Car {
                         System.out.println("To stop engine select neutral gear.");
                     }
                     break;
+                    
+                    // если в default ничего не делаешь, то его стоит удалить
                 default:
                     break;
             }
