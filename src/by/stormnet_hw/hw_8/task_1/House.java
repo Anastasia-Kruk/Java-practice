@@ -32,6 +32,8 @@ public abstract class House {
                 '}';
     }
 
+    // эти методы не должны быть в этом классе. Это все в мейн. 
+    // почему ты ограничиваешь пользователя в кол-ве этажей? пускай сколько хочет, столько и будет. Метод должен быть более универсальным
     public void selectNumberOfFloors() {
         System.out.println("Please select number of floors in your house:");
         System.out.println("1");
@@ -70,6 +72,7 @@ public abstract class House {
         }
     }
 
+    // почему ты ограничиваешь пользователя в кол-ве комнат? пускай сколько хочет, столько и будет. Метод должен быть более универсальным
     public void selectNumberOfRoomes() {
         System.out.println("Please select number of rooms in your house:");
         System.out.println("1");
