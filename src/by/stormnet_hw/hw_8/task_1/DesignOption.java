@@ -2,6 +2,7 @@ package by.stormnet_hw.hw_8.task_1;
 
 import java.util.Scanner;
 
+// наследником дома не может быть дизайн. Это как Cat extends Stone. Наследником может быть какой-нибудь дом, например, Townhouse
 public class DesignOption extends House {
     private String designType;
 
@@ -39,7 +40,6 @@ public class DesignOption extends House {
         }
     }
 
-    // эти методы не должны быть в этом классе. Это все в мейн. 
     public void selectYourHouse() {
         optionDesign();
         selectNumberOfFloors();
@@ -48,7 +48,6 @@ public class DesignOption extends House {
         selectFence();
     }
 
-    // эти методы не должны быть в этом классе. Это все в мейн. 
     public void optionDesign() {
         System.out.println("Please, select a house design:");
         System.out.println("1. Modern house");
