@@ -2,7 +2,9 @@ package by.stormnet_hw.hw_8.task_1;
 
 import java.util.Scanner;
 
+// класс абстрактный - это хорошо
 public abstract class House {
+    // эти переменные стоит сделать protected. Тогда они будут доступны у наследников
     private int numberOfFloor;
     private int numberOfRooms;
     private boolean isGarage;
@@ -22,6 +24,7 @@ public abstract class House {
         this.isFence = isFence;
     }
 
+   
     @Override
     public String toString() {
         return "House{" +
@@ -72,6 +75,7 @@ public abstract class House {
         }
     }
 
+    // эти методы не должны быть в этом классе. Это все в мейн. 
     // почему ты ограничиваешь пользователя в кол-ве комнат? пускай сколько хочет, столько и будет. Метод должен быть более универсальным
     public void selectNumberOfRoomes() {
         System.out.println("Please select number of rooms in your house:");
@@ -121,6 +125,7 @@ public abstract class House {
         }
     }
 
+    // эти методы не должны быть в этом классе. Это все в мейн. 
     public void selectGarage() {
         System.out.println("Do you want to have a garage?");
         System.out.println("1 - Yes");
@@ -155,6 +160,7 @@ public abstract class House {
         }
     }
 
+    // эти методы не должны быть в этом классе. Это все в мейн. 
     public void selectFence() {
         System.out.println("Do you want to have a fence?");
         System.out.println("1 - Yes.");
