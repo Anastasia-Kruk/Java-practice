@@ -39,6 +39,7 @@ public class DesignOption extends House {
         }
     }
 
+    // эти методы не должны быть в этом классе. Это все в мейн. 
     public void selectYourHouse() {
         optionDesign();
         selectNumberOfFloors();
@@ -47,6 +48,7 @@ public class DesignOption extends House {
         selectFence();
     }
 
+    // эти методы не должны быть в этом классе. Это все в мейн. 
     public void optionDesign() {
         System.out.println("Please, select a house design:");
         System.out.println("1. Modern house");
