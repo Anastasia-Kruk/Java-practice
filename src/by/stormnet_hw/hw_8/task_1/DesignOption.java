@@ -2,6 +2,7 @@ package by.stormnet_hw.hw_8.task_1;
 
 import java.util.Scanner;
 
+// наследником дома не может быть дизайн. Это как Cat extends Stone. Наследником может быть какой-нибудь дом, например, Townhouse
 public class DesignOption extends House {
     private String designType;
 
