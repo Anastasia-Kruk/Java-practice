@@ -11,6 +11,7 @@ public class ScholarSchedule {
         this.schedule = schedule;
     }
 
+    //Пустых case блоков лучше избегать.
     public void info() {
         switch (weekDay) {
             case MONDAY:
