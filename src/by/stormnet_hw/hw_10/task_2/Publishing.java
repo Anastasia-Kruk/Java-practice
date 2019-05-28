@@ -25,8 +25,4 @@ abstract class Publishing {
         this.year = year;
     }
 
-    @Override
-    protected Publishing clone() throws CloneNotSupportedException {
-        return (Publishing) super.clone();
-    }
 }
