@@ -7,7 +7,8 @@ public class Scholar {
         int dayOfWeek = Calendar.DAY_OF_WEEK;
         String schedule = "Day off";
         WeekDay weekDay = WeekDay.MONDAY;
-
+        //Очень много switch case :)
+        //Думаю, какой-то один здесь точно лишний)
         switch (dayOfWeek) {
             case 1:
                 weekDay = WeekDay.MONDAY;
