@@ -10,12 +10,14 @@ public class Main {
         Magazine magazine1 = new Magazine("ELLE", 2010, 8);
         Magazine magazine2 = new Magazine("VOGUE", 2000, 5);
 
+        // library
         ArrayList<Publishing> librery = new ArrayList<>();
         librery.add(book1);
         librery.add(book2);
         librery.add(magazine1);
         librery.add(magazine2);
 
+        //storage
         Storage storege = new Storage(librery);
         Storage storege2 = new Storage();
 
@@ -34,6 +36,10 @@ public class Main {
         book2.setAuthur("Zero");
 
         for (Publishing p : storege2.getStorege()) {
+            /* p.toString() - когда ты выводишь на экран через System.out.print() у твоего класса автоматически
+            вызывается метод toString(), значит, самому вызывать его не нужно и просто передать "p"
+            System.out.println(p);
+            */
             System.out.println(p.toString());
         }
     }
