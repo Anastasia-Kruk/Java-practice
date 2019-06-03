@@ -1,6 +1,8 @@
 package by.stormnet_hw.hw_10.task_2;
 
 abstract class Publishing {
+    // ты наследовалась от этого класса, думаю хотела эти поля сделать доступными для наследников класса. 
+    // protected - такой модификатор тебе нужен для таких случаев.
     String name;
     int year;
 

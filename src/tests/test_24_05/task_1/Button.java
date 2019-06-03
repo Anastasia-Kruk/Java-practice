@@ -11,6 +11,9 @@ public class Button {
         eventHandler.execute();
     }
 
+    //В данном случае геттер нам не нужен.
+    //Объект типа EventHandler используется лишь для выполнения действий.
+    //Никакой информации через него и о нем мы получать не будем.
     public EventHandler getEventHandler() {
         return eventHandler;
     }

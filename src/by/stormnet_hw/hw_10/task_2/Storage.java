@@ -3,7 +3,8 @@ package by.stormnet_hw.hw_10.task_2;
 import java.util.ArrayList;
 
 public class Storage implements Cloneable {
-    ArrayList<Publishing> librery;
+    // модификатор доступа, думаю что точно не default должен быть. 
+    ArrayList<Publishing> librery; // <- library
 
     public Storage() {
     }
