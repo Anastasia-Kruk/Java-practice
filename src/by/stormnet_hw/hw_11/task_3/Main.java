@@ -16,6 +16,7 @@ public class Main {
 
         Comparator<Building> comparator = new BuildingStreetNameComparator().thenComparing(new BuildingHouseEntranceComparator());
 
+        // сделай нормальный метод компаратора в классе Build и тогда здесь в конструктор его передавать не нужно будет
         TreeSet<Building> houses = new TreeSet<>(comparator);
         houses.addAll(buildings);
 
