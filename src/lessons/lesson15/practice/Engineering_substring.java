@@ -1,5 +1,6 @@
 package lessons.lesson15.practice;
 
+// Engineering_substring -> EngineeringSubstring и только так
 public class Engineering_substring {
     public static void main(String[] args) {
         String str = "Engineering";
