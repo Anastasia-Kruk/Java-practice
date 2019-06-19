@@ -1,5 +1,6 @@
 package lessons.lesson15.practice;
 
+// имя класса
 public class Names_join {
     public static void main(String[] args) {
         String name1 = "Anna";
