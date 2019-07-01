@@ -25,7 +25,7 @@ public class StringReverse {
 
         System.out.println(string);
         reverseString.accept(string);
-
+// не оставляй пустых строк перед скобками
 
     }
 }
