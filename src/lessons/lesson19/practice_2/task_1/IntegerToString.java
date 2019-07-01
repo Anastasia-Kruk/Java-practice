@@ -6,6 +6,7 @@ public class IntegerToString {
     private static  final String STRING = "рублей";
 
     public static void main(String[] args) {
+        // Function<Integer, String> func = number -> number + " rub";
         Function <Integer, String> integerToString = (integer) -> {
             String integer1 = integer.toString();
             String function = integer1 + " " + STRING;
