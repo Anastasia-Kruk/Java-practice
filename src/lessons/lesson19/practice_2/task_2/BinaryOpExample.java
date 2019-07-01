@@ -4,6 +4,7 @@ import java.util.function.BinaryOperator;
 
 public class BinaryOpExample {
     public static void main(String[] args) {
+        // binaryOperator - плохое имя для переменной
         BinaryOperator <Integer> binaryOperator = (x,y) -> x*y;
         int elem = 5;
         int elem_2 = 10;
