@@ -9,6 +9,7 @@ import java.util.function.Predicate;
 
 public class PredicateExample {
     public static void main(String[] args) {
+        // имена переменных так себе
         Predicate<User> userPredicate = (user) -> user.getName().startsWith("A");
         Predicate<User> userPredicate1 = (user) -> user.getName().startsWith("P");
         Predicate<User> userPredicate2 = (user) -> user.getName().startsWith("E");
