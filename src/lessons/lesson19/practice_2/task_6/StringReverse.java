@@ -4,6 +4,8 @@ import java.util.NavigableSet;
 import java.util.TreeSet;
 import java.util.function.Consumer;
 
+
+// new TreeSet<>(сюда можно передать компаратор)
 public class StringReverse {
     public static void main(String[] args) {
         Consumer<TreeSet> reverseString = (string) -> {
