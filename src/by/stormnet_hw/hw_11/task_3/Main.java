@@ -7,18 +7,12 @@ import java.util.TreeSet;
 
 public class Main {
     public static void main(String[] args) {
-        List<Building> buildings = new ArrayList<>();
-        buildings.add(new Building("Ostroshitskaya", 1));
-        buildings.add(new Building("Ostroshitskaya", 2));
-        buildings.add(new Building("Bachilo", 8));
-        buildings.add(new Building("Akademicheskaya", 4));
-        buildings.add(new Building("Mogilevskaya", 3));
-
-        Comparator<Building> comparator = new BuildingStreetNameComparator().thenComparing(new BuildingHouseEntranceComparator());
-
-        // сделай нормальный метод компаратора в классе Build и тогда здесь в конструктор его передавать не нужно будет
-        TreeSet<Building> houses = new TreeSet<>(comparator);
-        houses.addAll(buildings);
+        TreeSet<Building> houses = new TreeSet<>();
+        houses.add(new Building("Ostroshitskaya", 1));
+        houses.add(new Building("Ostroshitskaya", 2));
+        houses.add(new Building("Bachilo", 8));
+        houses.add(new Building("Akademicheskaya", 4));
+        houses.add(new Building("Mogilevskaya", 3));
 
         System.out.println(houses );
     }

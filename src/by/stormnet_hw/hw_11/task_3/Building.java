@@ -13,37 +13,31 @@ public class Building implements Comparable<Building> {
         return streetName;
     }
 
-    public void setStreetName(String streetName) {
-        this.streetName = streetName;
-    }
-
     public int getHouseEntrance() {
         return houseEntrance;
     }
 
-    public void setHouseEntrance(int houseEntrance) {
-        this.houseEntrance = houseEntrance;
-    }
-
     @Override
-    public int compareTo(Building o) {
-       
-        /*
-        когда ты классом имплементишь интерфейс Comparable, 
-        то передавать другой компаратор для сортировки не нужно, за исключением случаев, 
-        когда ты хочешь изменить дефолтный (т.е. который имплементит твой класс)
-        */
-        
-        // при такой схеме у тебя объекты всегда равны будут, потому что метод всегда возвращает 0
-        return 0;
+    public int compareTo(Building b) {
+        int comperedStreet = this.getStreetName().compareTo(b.getStreetName());
+        if (comperedStreet == 0) {
+            if (this.getHouseEntrance() > b.getHouseEntrance()) {
+                return 1;
+            } else if (this.getHouseEntrance() < b.getHouseEntrance()) {
+                return -1;
+            } else
+                return 0;
+        }
+        return comperedStreet;
     }
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Building{");
         sb.append("streetName='").append(streetName).append('\'');
-        sb.append(", houseEntrance= ").append(houseEntrance);
-        sb.append('}'+ "\n");
+        sb.append("houseEntrance= ").append(houseEntrance);
+        sb.append('}');
+        sb.append("\n");
         return sb.toString();
     }
 }
