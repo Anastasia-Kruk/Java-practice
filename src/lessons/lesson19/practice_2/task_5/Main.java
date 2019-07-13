@@ -11,6 +11,7 @@ public class Main {
         Random random = new Random();
 
         TreeSet<Sportsmen> sportsmens = new TreeSet<>();
+        // i = 0 и можно убрать numberOfSportsmens+1
         for (int i = 1; i < numberOfSportsmens + 1; i++) {
             int speed = random.nextInt(30);
             sportsmens.add(new Sportsmen(i, speed));
@@ -20,6 +21,9 @@ public class Main {
         TreeMap<Medal, Sportsmen> race = new TreeMap<>();
         int counter = 1;
 
+        /* допустим ты выдала медали, зачем тебе бежать по оставшимся спортсменам?
+        думаю TreeMap<Medal, Sportsmen> race = new TreeMap<>(); не нужна, а вот засетать медальку спортсмену необходимо
+        */
         for (Sportsmen elem : sportsmens) {
             if (counter == 1) {
                 race.put(Medal.GOLD, elem);
