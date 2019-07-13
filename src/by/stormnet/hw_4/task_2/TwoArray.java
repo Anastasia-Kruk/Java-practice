@@ -26,19 +26,19 @@ public class TwoArray {
             array2[i] = random.nextInt((max - min) + 1) + min;
             sum2 += array2[i];
         }
+
         System.out.println(Arrays.toString(array1));
         System.out.println(Arrays.toString(array2));
 
         mean1 = sum1 / array1.length;
         mean2 = sum2 / array2.length;
 
-        if (mean1 > mean2)
+        if (mean1 > mean2) {
             System.out.println("mean1 > mean2");
-
-        else if (mean2 > mean1)
+        } else if (mean2 > mean1) {
             System.out.println("mean2 > mean1 ");
-
-        else
+        } else {
             System.out.println("mean1 = mean2");
+        }
     }
 }

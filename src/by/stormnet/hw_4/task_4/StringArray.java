@@ -7,8 +7,7 @@ import java.util.List;
 
 public class StringArray {
     public static void main(String[] args) {
-
-        String[] original = { "Каждый","охотник","желает","знать","где","сидит","фазан"};
+        String[] original = {"Каждый", "охотник", "желает", "знать", "где", "сидит", "фазан"};
         List<String> list = Arrays.asList(original);
         Collections.reverse(list);
         list.toArray(original);
