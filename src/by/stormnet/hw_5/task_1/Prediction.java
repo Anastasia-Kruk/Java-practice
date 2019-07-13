@@ -8,7 +8,6 @@ public class Prediction {
         // где используешь переменную, там ее и создаешь
         String ask;
 
-// два абзаца думаю многовато, можно разделять на логические разделы, используя 'enter', но одного хватит
         Scanner sc = new Scanner(System.in);
         do {
             System.out.println("Enter your question: ");
@@ -20,11 +19,11 @@ public class Prediction {
             }
 
             // (ask.charAt(ask.length() - 1) != '?')
-           //эта строка дублируется, значит уже есть проблема в коде. 
-            
-            /*           
+           //эта строка дублируется, значит уже есть проблема в коде.
+
+            /*
            как насчет сделать так:
-            
+
             while(true) {
             if(ask.charAt(ask.length() - 1) == '?') {
                  answer();
